@@ -106,32 +106,32 @@ const Dashboard = () => {
 									<span className="text-white text-sm md:text-base text-opacity-50 mr-2">
 										Birthday:
 									</span>
-									{detailUser.birthday} ({calculateAge(detailUser.birthday)}{" "}
+									{detailUser?.birthday} ({calculateAge(detailUser?.birthday)}{" "}
 									years old)
 								</p>
 								<p>
 									<span className="text-white text-sm md:text-base text-opacity-50 mr-2">
 										Horoscope:
 									</span>
-									{detailUser.horoscope}
+									{detailUser?.horoscope}
 								</p>
 								<p>
 									<span className="text-white text-sm md:text-base text-opacity-50 mr-2">
 										Zodiac:
 									</span>
-									{detailUser.zodiac}
+									{detailUser?.zodiac}
 								</p>
 								<p>
 									<span className="text-white text-sm md:text-base text-opacity-50 mr-2">
 										Height:
 									</span>
-									{detailUser.height} cm
+									{detailUser?.height} cm
 								</p>
 								<p>
 									<span className="text-white text-sm md:text-base text-opacity-50 mr-2">
 										Weight:
 									</span>
-									{detailUser.weight} kg
+									{detailUser?.weight} kg
 								</p>
 							</div>
 							{/* <p className="text-white text-opacity-50 text-sm font-medium">
