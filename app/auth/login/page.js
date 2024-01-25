@@ -28,10 +28,14 @@ const Login = () => {
 			},
 			{
 				onSuccess: (res) => {
-					login({
-						userData: { access_token: res.access_token },
-					});
-					router.replace("/dashboard");
+					if (res.message) {
+						setErrMessage(res.message);
+					} else {
+						login({
+							userData: { access_token: res.access_token },
+						});
+						router.replace("/dashboard");
+					}
 				},
 				onError: (err) => {
 					console.error(err);
